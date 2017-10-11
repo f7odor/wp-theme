@@ -216,3 +216,34 @@ h6, .h6 {
   padding: 15px;
   border: #ccc 1px solid;
 }
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+  .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+    color: white;
+    border-color: #438bca;
+    background-color: #438bca;
+  }
+
+.btn {
+  border-radius: 300px;
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn-xl {
+  font-size: 11px;
+  padding: 15px 45px;
+}
+
+.blog-nav a{
+  color: #fff;
+}
+
+.blog-nav a:hover{
+  color: #666;
+}
