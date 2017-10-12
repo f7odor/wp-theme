@@ -61,3 +61,6 @@
   }
 
   add_action('widgets_init', 'wpb_init_widgets');
+
+// Customize File
+  require get_template_directory(). '/includes/customize.php';
