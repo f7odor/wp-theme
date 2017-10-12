@@ -18,6 +18,11 @@
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php wp_head(); ?>
+    <style>
+      .showcase{
+        background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/pexels-photo-105254.jpeg'); ?>) no-repeat center center;
+      }
+    </style>
   </head>
   <body>
     <div class="blog-masthead">
@@ -41,10 +46,9 @@
     </div>
 <section class="showcase">
   <div class="container">
-    <h1>Custom Bootstrap WordPress Theme</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod mollitia cum repudiandae officia temporibus saepe unde, odit quae, ducimus perspiciatis! Rerum quam, blanditiis!</p>
-    <a class="btn btn-outline btn-xl js-scroll-trigger">Read More</a>
-    <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+    <h1><?php echo get_theme_mod('showcase_heading', 'Custom Bootstrap Wordpress Theme'); ?></h1>
+    <p><?php echo get_theme_mod('showcase_text', 'Custom Bootstrap Wordpress Text'); ?></p>
+    <a  href="<?php echo get_theme_mod('btn_url', 'http://test.com'); ?>"class="btn btn-outline btn-xl js-scroll-trigger"><?php echo get_theme_mod('btn_text', 'Get Started'); ?></a>
   </div>
 </section>
 <section class="boxes">
